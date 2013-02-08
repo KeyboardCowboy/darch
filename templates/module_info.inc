@@ -1,9 +1,9 @@
 name = [mod:name]
 description =
-core = 7.x
+core = [drupal:core]
 
 ;package =
 ;configure =
 
-files[] = [mod:name].module
+files[] = [mod:machine-name].module
 ;dependencies[] =

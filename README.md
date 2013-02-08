@@ -6,4 +6,4 @@ Current Features
 --------------------------------------------------------------------------------
 - Create new modules
 
-    $ drush new-module module_name
+     $ drush new-module module_name

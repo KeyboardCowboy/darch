@@ -1,5 +1,5 @@
 name = [mod:name]
-description =
+;description =
 core = [drupal:core]
 
 ;package =

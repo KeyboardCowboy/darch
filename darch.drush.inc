@@ -92,6 +92,12 @@ function drush_darch_new_module($mn = '', $name = '') {
       $data = str_replace(array_keys($subs), array_values($subs), $data);
       drush_file_append_data("$dir/$filename.module", $data);
 
+      // Create the ReadMe file
+      $data = file("$root/templates/readme_txt.inc");
+      $data = implode('', $data);
+      $data = str_replace(array_keys($subs), array_values($subs), $data);
+      drush_file_append_data("$dir/README.txt", $data);
+
       drush_log(dt("Created module !name in !dir", array('!name' => $filename, '!dir' => $dir)), 'success');
     }
   }
